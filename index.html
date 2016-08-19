@@ -1,35 +1,83 @@
-<!DOCTYPE html> 
-<html lang="pt-br">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<title>Livro jQuery Mobile do Maujor</title> 
-    <link rel="stylesheet" href="jquery.mobile.min.css" />
-<script src="jquery-1.9.1.min.js"></script>
-<script src="jquery.mobile.min.js"></script>
-  </head>
-  <body>
-    <div data-role="page">
-	<div data-role="header">
-		<h1>Exemplos de Transição</h1>
-	</div>
-	
-	<div data-role="content">
-		<h1>Primeira Página</h1> 
-			<a href="segunda.html" data-role="button" data-transition="slide">Slide</a>
-			<a href="segunda.html" data-role="button" data-transition="slideup">Slide Up</a>
-			<a href="segunda.html" data-role="button" data-transition="slidedown">Slide Down</a>
-			<a href="segunda.html" data-role="button" data-transition="slidefade">Slide Fade</a>
-            <a href="segunda.html" data-role="button" data-transition="pop">Pop</a>
-			<a href="segunda.html" data-role="button" data-transition="fade">Fade</a>
-			<a href="segunda.html" data-role="button" data-transition="flip">Flip</a>
-			<a href="segunda.html" data-role="button" data-transition="turn">Turn</a>
-			<a href="segunda.html" data-role="button" data-transition="flow">Flow</a>
-    </div>
-	
-	<div data-role="footer">
-		<small class="ui-bar">&#169; 2013 Livro jQuery Mobile do Maujor &#8212; 2<sup>a.</sup> edição</small>
-	</div>
-</div> 
-  </body>
+<html>
+    <head>
+        <title>.:GleisonL:. :GITHUB:</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="jquery.mobile.min.css" />
+        <script src="jquery-1.9.1.min.js"></script>
+        <script src="jquery.mobile.min.js"></script>
+        <script>
+        </script>
+    </head>
+    <body>
+
+        <div data-role="page" id="pageone" data-theme="b">
+            <div data-role="header">
+                <h1>Gleison Lichtenfels</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">Perfil</a></li>
+                        <li><a href="#pagetwo" data-icon="bars" data-transition="slide">Projetos</a></li>
+                        <li><a href="#contato" data-icon="comment" data-transition="slide">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+
+                <div data-role="collapsible">
+                    <h1>Redes Sociais</h1>
+                    <p><a href="www.linkedin.com/in/gleison-lichtenfels" target="_blank" class="ui-btn">Linkedin</a></p>
+                    <p><a href="https://www.facebook.com/gleison.1996" target="_blank" class="ui-btn">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/gleison.l/" target="_blank" class="ui-btn">Instagram</a></p>                
+                </div>
+            </div>
+
+            <div data-role="footer">
+                <h1><a href="https://github.com/GleisonL" target="_blank" class="ui-btn" style="text-decoration: none">GITHUB.COM/GLEISONL</a></h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="pagetwo" data-theme="b">
+            <div data-role="header">
+                <h1>Projetos</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="home" data-transition="slidefade">Perfil</a></li>
+                        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="bars">Page Two</a></li>                        
+                        <li><a href="#contato" data-icon="comment" data-transition="slide">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>Veja meus projetos visitando o GitHub</p>
+            </div>
+
+            <div data-role="footer">
+                <h1><a href="https://github.com/GleisonL" target="_blank" class="ui-btn" style="text-decoration: none">GITHUB.COM/GLEISONL</a></h1>
+            </div>
+        </div>
+        <div data-role="page" id="contato" data-theme="b">
+            <div data-role="header">
+                <h1>Contato</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="home" data-transition="slidefade">Perfil</a></li>
+                        <li><a href="#pagetwo" data-icon="bars" data-transition="slidefade">Projeto</a></li>
+                        <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="comment">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                    <a href="mailto:gleison_l@outlook.com" class="ui-btn">gleison_l@outlook.com</a>
+                    <a href="https://www.facebook.com/messages/gleison.1996" class="ui-btn">Facebook</a>
+            </div>
+
+            <div data-role="footer">
+                <h1><a href="https://github.com/GleisonL" target="_blank" class="ui-btn" style="text-decoration: none">GITHUB.COM/GLEISONL</a></h1>
+            </div>
+        </div>
+    </body>
 </html>
